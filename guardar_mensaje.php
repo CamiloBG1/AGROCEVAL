@@ -26,7 +26,7 @@ try {
     $mail->Host       = 'smtp.office365.com';
     $mail->SMTPAuth   = true;
     $mail->Username   = 'inv_foragroltda@hotmail.com';
-    $mail->Password   = 'CEV32025*'; // ⚠️ Reemplaza con App Password si tienes 2FA
+    $mail->Password   = 'lhmphvmygthiyoqo'; // ⚠️ Reemplaza con App Password si tienes 2FA
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
