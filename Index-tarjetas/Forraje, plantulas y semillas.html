@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <html lang="es">
+    	<head>
+            <meta charset="UTF-8">
+            <title>Forrajes, plántulas y Semillas</title>
+            <link rel="stylesheet" href="../style-tarjetas/style-Forraje.css">
+        </head>
+
+        <body>      
+          <!-- Primera barra: redes sociales -->
+           <div class="top-bar">
+                    <div class="social-links">
+                    <a href="https://www.facebook.com/equiagrosilomaiz" target="_blank">
+                        <img src="../Img/facebook.png" alt="Facebook" />
+                    </a>
+                    <a href="https://www.instagram.com/agroceval/" target="_blank">
+                        <img src="../img/instagram.png" alt="Instagram" />
+                    </a>
+                    <a href="https://wa.me/573104616270?text=Hola%20AGROCEVAL,%20quiero%20más%20información" target="_blank">
+                      <img src="../img/whatsapp.png" alt="WhatsApp" />
+                    </a>
+                    
+                    </div>
+              </div>
+              
+          <h1>Forraje, plántulas y Semillas</h1>
+
+          <div class="tarjetas-container">
+            <div class="tarjeta">
+              <img src="../img/Semillas1.jpg" alt="Semillas1">
+              <h3>Semillas de Pastos de Corte de Alta Calidad</h3>
+              <button class="btn-leer-mas" onclick="mostrarInfo(this)">Leer más</button>
+              <div class="info-extra" style="display: none;">
+                <p>Ofrecemos semillas de pastos especialmente seleccionadas para garantizar un crecimiento rápido y nutritivo, ideales para mejorar la alimentación de su ganado o para proyectos de paisajismo.
+                  ¡Maximice la producción y calidad de su pastoreo!
+                  Variedades resistentes y de alto rendimiento
+                  Ideal para diferentes tipos de climas y suelos
+                  Fácil siembra y mantenimiento</p>
+              </div>
+            </div>
+
+
+            <div class="tarjeta">
+              <img src="../img/Semillas2.jpg" alt="Semillas2">
+              <h3>Semilla de Maíz Diente Caballo</h3>
+              <button class="btn-leer-mas" onclick="mostrarInfo(this)">Leer más</button>
+              <div class="info-extra" style="display: none;">
+                <p>Ideal para ensilar, nuestra semilla de maíz Diente Caballo ofrece gran resistencia a plagas y enfermedades, asegurando un alto rendimiento y gran adaptabilidad a diversas condiciones de cultivo.</p>
+                <p> Características destacadas:</p>
+                <p>- Alta resistencia a plagas y enfermedades</p>
+                <p>- Excelente rendimiento en cosecha</p>
+                <p>- Perfecto para ensilar y optimizar la alimentación de su ganado</p>
+                <p> ¡Despachamos a cualquier lugar del país!</p>
+            </div>
+         </div>
+
+
+         <!-- SCRIPT para las tarjetas -->
+
+         <script>
+          function mostrarInfo(boton) {
+          const info = boton.nextElementSibling;
+          if (info.style.display === "none" || info.style.display === "") {
+          info.style.display = "block";
+          boton.textContent = "Leer menos";
+          } else {
+          info.style.display = "none";
+          boton.textContent = "Leer más";
+          }
+        }
+        </script>
+
+        </body>   
+    </html>
+
