@@ -1,256 +1,103 @@
 <!DOCTYPE html>
-    <html lang="es">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta name="keywords" content="agro, agroceval, productos agrícolas, maquinaria, ensilaje">
-            <meta name="author" content="Agroceval">
-            <title>AGROCEVAL</title>
-            <link rel="stylesheet"  href="style.css">
-            <link rel="icon" href="img/LOGOTIPO.PNG" type="image/png">  
-        </head>
-    
-        <body>
-          <!-- Primera barra: redes sociales -->
-                <div class="top-bar">
-                    <div class="social-links">
-                    <a href="https://www.facebook.com/equiagrosilomaiz" target="_blank">
-                        <img src="img/facebook.png" alt="Facebook" />
-                    </a>
-                    <a href="https://www.instagram.com/agroceval/" target="_blank">
-                        <img src="img/instagram.png" alt="Instagram" />
-                    </a>
-                    <a href="https://wa.me/573104616270?text=Hola%20AGROCEVAL,%20quiero%20más%20información" target="_blank">
-                      <img src="img/whatsapp.png" alt="WhatsApp" />
-                    </a>
-                    </div>
-                </div>
-                        
-                  <!-- Navegación Fija-->
-                  <nav>
-                    <ul>
-                      <li><a href="#Inicio">Inicio</a></li>
-                      <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-                      <li><a href="#Productos">Productos</a></li>
-                      <li><a href="#Ofertas-del-mes">Ofertas del mes</a></li>
-                      <li><a href="#Contacto">Contacto</a></li>
-                    </ul>
-                  </nav>
-                  
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGROCEVAL • Soluciones Agrobiológicas</title>
+    <link rel="stylesheet" href="style.css">
 
+    <!-- Tipografías modernas -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
 
-            <!------------ Seecion Carrusel-------->
-              <section class="carrusel">
-                <div class="slider">
-                  <div class="slide">
-                    <div class="slider-bg">
-                      <img src="img/imagen1.jpg" alt="Fondo desenfocado">
-                    </div>
-                    <img src="img/imagen1.jpg" alt="Imagen 1">
-                  </div>
-                  <div class="slide">
-                    <div class="slider-bg">
-                      <img src="img/imagen2.jpg" alt="Fondo desenfocado">
-                    </div>
-                    <img src="img/imagen2.jpg" alt="Imagen 2">
-                  </div>
-                </div>
-              </section>
-                  
-                   
-                <!------- Sección sobre nosotros -------->
+<body>
 
-                <section id="sobre-nosotros" class="sobre-nosotros-section">
-                  <h2>Sobre Nosotros</h2>
-                  <p>Somos una empresa líder en la producción y comercialización de ensilaje de maíz, así como en la distribución de maquinaria agroindustrial. Ofrecemos tractores Kubota e implementos, vagones forrajeros, ensiladoras, plantas eléctricas, motores diésel, gasolina y eléctricos, motocultores, motobombas y equipos de riego.</p>
-                  <p>También contamos con guadañadoras, fumigadoras, motosierras, herramientas eléctricas, equipos de ordeño, molinos de cereales, desgranadoras, trilladoras, secadoras tipo silo y equipos para el beneficio húmedo del café. Además, suministramos insumos agrícolas como fertilizantes químicos y orgánicos, plántulas de aguacate y cítricos, semillas de maíz y forrajes.</p>
-                </section>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <img src="img/logo.png" alt="AGROCEVAL">
+        </div>
 
+        <nav class="nav">
+            <a href="#productos">Productos</a>
+            <a href="#beneficios">Beneficios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
 
-                <!------- Sección de productos como tarjetas -------->
-                <section id="Productos" class="productos-section">
-                    <h2>Categoría de Productos</h2>
-                    <div class="tarjetas-container">
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-texto">
+            <h1>Soluciones Agrobiológicas para Cultivos Más Sanos</h1>
+            <p>Optimiza el rendimiento de tus cultivos con tecnología natural y microorganismos eficientes.</p>
+            <a href="#productos" class="btn">Ver Productos</a>
+        </div>
+    </section>
 
+    <!-- PRODUCTOS -->
+    <section id="productos" class="productos-section">
+        <h2>Nuestros Productos</h2>
 
-                      <a href="Index-tarjetas/Ganaderia.html" class="tarjeta tarjeta-verde">
-                        <img src="img/Ganaderia.jpg" alt="Ganadería">
-                        <h3>Ganadería</h3>
-                      </a>
+        <div class="grid-productos">
 
+            <div class="card">
+                <img src="img/em.jpg" alt="EM Microorganismos">
+                <h3>Microorganismos EM</h3>
+                <p>Consorcio benéfico para activar el suelo, mejorar la fertilidad y proteger el cultivo.</p>
+                <a href="#" class="btn-card">Ver más</a>
+            </div>
 
-                      <a href="Index-tarjetas/Agroforestal.html" class="tarjeta tarjeta-verde">
-                        <img src="img/Agroforestal.jpg" alt="Agroforestal">
-                        <h3>Agroforestal</h3>
-                      </a>
+            <div class="card">
+                <img src="img/fosforiz.jpg" alt="Fosforiz">
+                <h3>Fosforiz</h3>
+                <p>Solubilización natural del fósforo para mejorar la absorción y vigor del cultivo.</p>
+                <a href="#" class="btn-card">Ver más</a>
+            </div>
 
+            <div class="card">
+                <img src="img/biofert.jpg" alt="Biofertilizante">
+                <h3>Biofertilizante</h3>
+                <p>Nutrición equilibrada con microorganismos vivos que revitalizan la planta.</p>
+                <a href="#" class="btn-card">Ver más</a>
+            </div>
 
-                      <a href="Index-tarjetas/Bombas, Riego y piscicultura.html" class="tarjeta tarjeta-verde">
-                        <img src="img/Bombas, Riego y Piscicultura.jpg" alt="Bombas, Riego y piscicultura">
-                        <h3>Bombas, Riego y Piscicultura</h3>
-                      </a>
+        </div>
+    </section>
 
-                    
-                      <a href="Index-tarjetas/Fumigacion.html" class="tarjeta tarjeta-verde">
-                        <img src="img/Fumigacion.jpg" alt="Fumigacion">
-                        <h3>Fumigación</h3>
-                      </a>
-                    
+    <!-- BENEFICIOS -->
+    <section id="beneficios" class="beneficios-section">
+        <h2>Beneficios de Usar AGROCEVAL</h2>
 
-                      <a href="Index-tarjetas/Ferreteria, Motores y Plantas.html" class="tarjeta tarjeta-verde">
-                        <img src="img/Ferreteria, Motores y plantas.jpg" alt="Ferreteria, Motores y Plantas">
-                        <h3>Ferretería, Motores y Plantas</h3>
-                      </a>
+        <div class="beneficios-grid">
+            <div class="beneficio-item">
+                <h3>✔ Mejora del Suelo</h3>
+                <p>Aumenta la materia orgánica, microorganismos y vida del suelo.</p>
+            </div>
 
+            <div class="beneficio-item">
+                <h3>✔ Aumenta la Producción</h3>
+                <p>Más vigor, mejores raíces y cultivos más sanos.</p>
+            </div>
 
-                      <a href="Index-tarjetas/Forraje, plantulas y semillas.html" class="tarjeta tarjeta-verde">
-                        <img src="img/Forraje, plantulas y semillas.jpg" alt="Forraje, plantulas y semillas">
-                        <h3>Forraje, plántulas y Semillas</h3>
-                      </a>
+            <div class="beneficio-item">
+                <h3>✔ 100% Natural</h3>
+                <p>Basado en microorganismos benéficos y procesos biológicos.</p>
+            </div>
+        </div>
+    </section>
 
-                      <a href="Index-tarjetas/Insumos y fertilizantes.html" class="tarjeta tarjeta-verde">
-                        <img src="img/Insumos y fertilizantes.jpg" alt="Insumos y fertilizantes">
-                        <h3>Insumos y Fertilizantes</h3>
-                      </a>
-                
-                      <a href="Index-tarjetas/Hidrolavadoras.html" class="tarjeta tarjeta-verde">
-                        <img src="img/Hidrolavadoras.jpg" alt="Hidrolavadoras">
-                        <h3>Hidrolavadoras</h3>
-                      </a>
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto-section">
+        <h2>Contacto</h2>
+        <p>¿Necesitas asesoría técnica o cotización?</p>
+        <a href="https://wa.me/57xxxxxxxx" target="_blank" class="btn">Hablar por WhatsApp</a>
+    </section>
 
-                    </div>
-                </section>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2025 AGROCEVAL — Soluciones Agrobiológicas</p>
+    </footer>
 
+</body>
+</html>
 
-                <!----------- Sección de Promociones ----------->
-                <section id="Ofertas-del-mes" class="ofertas-section">
-                  <h2>Ofertas del mes</h2>
-                  <div class="tarjetas-container">
-
-                  <div class="tarjeta tarjeta-verde">
-                    <img src="img/Guadaña.jpg" alt="Guadaña">
-                    <h3>Guadaña STIGA</h3>
-                    <p>Por la compra de la Guadaña STIGA BCC 555.</p>
-                    
-                    <button class="btn-toggle boton-verde" onclick="mostrarInfo(this)">Ver más</button>
-
-                    <div class="info-extra" style="display: none;">
-                      <p>Llévate totalemente ¡GRATIS!:</p>
-                      <ul>
-                        <li>Fumigadora</li>
-                        <li>Careta de protección</li>
-                        <li>Guantes</li>
-                        <li>Yoyo</li>
-                        <li>Lima</li>
-                        <li>Nylon</li>
-                        <li>Aceite</li>
-                        <li>Grasa</li>
-                      </ul>
-                    </div>
-                  </div>
-
-
-
-                  <div class="tarjeta tarjeta-verde">
-                    <img src="img/Motosierra.jpg" alt="Motosierra">
-                    <h3>Motoseirra STIGA</h3>
-                    <p>La motosierra STIGA es ideal para el trabajo pesado.</p>
-                    
-                    <button class="btn-toggle boton-verde" onclick="mostrarInfo(this)">Ver más</button>
-
-                    <div class="info-extra" style="display: none;">
-                      <p>Esta motosierra incluye:</p>
-                      <ul>
-                        <li> Motor de gasolina de 52 cc con 2,3 kW de potencia</li>
-                        <li>Barra de corte de 45 cm para un rendimiento eficiente</li>
-                        <li>Cadena de alta velocidad: 23,1 m/s</li>
-                        <li>Sistema de control de vibraciones (VCS) para mayor confort</li>
-                        <li>Peso optimizado: solo 6,6 kg (sin barra ni cadena)</li>
-                        <li> Incluye llave para el tensado de la cadena</li>
-                      </ul>
-                    </div>
-                  </div>
-
-
-                  </div>
-                </section>
-
-
-
-
-                <!----------- Sección de contacto ----------->
-
-                <section id="Contacto" class="contacto-section">
-                    <h2>Contáctanos</h2>
-                    <p>Si requieres de más Información, tienes alguna Consulta, o quieres hacer una Cotización, puedes comunicarte con nosotros a través de:                    </p>
-                
-                    <ul>
-                    <li>📞 Teléfono: +57 3104616270</li>
-                    <li>📧 Correo:  agrocevalcolombia@hotmail.com </li>
-                    <li>💬 WhatsApp: <a href="https://wa.me/573104616270" target="_blank">Escríbenos aquí</a></li>
-                    <li>📍 Nos encontramos ubicados en la carrera 6 #35-37 esquina local 1, Pereira-Risaralda</a></li>  
-                  </ul>
-                
-                <!-- Formulario de contacto -->
-                
-                  <!--<form action="guardar_mensaje.php" method="POST">
-                    <!-- Campos visibles -->
-                   <!-- <input type="text" name="nombre" placeholder="Tu nombre" required>
-                    <input type="email" name="email" placeholder="Tu correo" required>
-                    <input type="text" name="telefono" placeholder="Teléfono" required>
-                    <input type="text" name="asunto" placeholder="Asunto" required>
-                    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-
-                    <button type="submit">Enviar mensaje</button>
-                  </form>-->
-
-    
-
-                <!-- Sección Carrusel -->
-                
-                <script>
-                    let slideIndex = 0;
-                    const slides = document.querySelectorAll('.slide');
-                  
-                    function showSlides() {
-                      slides.forEach((slide, index) => {
-                        slide.style.display = 'none';
-                      });
-                  
-                      slideIndex++;
-                      if (slideIndex > slides.length) { slideIndex = 1; }
-                  
-                      slides[slideIndex - 1].style.display = 'block';
-                      setTimeout(showSlides, 4000); // Cambia cada 4 segundos
-                    }
-                  
-                    showSlides();
-                  </script>
-
-                  <script>
-                    function mostrarInfo(boton) {
-                      const info = boton.nextElementSibling;
-                      if (info.style.display === "none" || info.style.display === "") {
-                        info.style.display = "block";
-                        boton.textContent = "Leer menos";
-                      } else {
-                        info.style.display = "none";
-                        boton.textContent = "Ver más";
-                      }
-                    }
-                  </script>
-
-                  <!-----Seccion terminos y condiciones------>
-                  <footer>
-                    <p>&copy; 2025 AGROCEVAL | Todos los derechos reservados</p>
-                    <p>
-                      <a href="index-politicas/politica.html">Política y privacidad</a> |
-                      <a href="index-politicas/terminos.html">Términos y condiciones</a> |
-                      <a href="mailto:agrocevalcolombia@hotmail.com">Contacto</a>
-                    </p>
-                  </footer>
-
-
-        </body>
-    </html>
-    
