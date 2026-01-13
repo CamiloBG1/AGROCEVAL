@@ -39,7 +39,11 @@ body{
   margin: 0 10px;
   vertical-align: middle;
 }
-  
+
+.carrusel {
+  margin-top: 140px; /* espacio total de barras */
+}
+
 
  /* Navegación fija */
   /* nav {
