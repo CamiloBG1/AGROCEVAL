@@ -10,22 +10,20 @@ body{
 
 /* Primera barra: redes sociales */
 .top-bar {
-    background-color: #c9f2ec; /* más claro */
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 20px;
+    background-color: #79dcd0;
+    padding: 5px 0;
+    text-align: right;
     position: fixed;
-    top: 0;
     width: 100%;
+    top: 0;
+    left: 0;
     z-index: 1001;
-}
-
+  }
+  
   .social-links a img {
-    width: 20px;
-    height: 20px;
-    margin: 0 12px;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
     vertical-align: middle;
   }
   
@@ -41,14 +39,10 @@ body{
   margin: 0 10px;
   vertical-align: middle;
 }
+  
 
-.carrusel {
-  margin-top: 140px; /* espacio total de barras */
-}
-
-
- /* Navegación fija */
-  /* nav {
+ /* /* Navegación fija */
+  nav {
     background-color: #225e5c;
     padding: 10px 0;
     text-align: center;
@@ -75,67 +69,8 @@ body{
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px;  
-  }  */
-
-
-  /* ===== NAVBAR MODERNA ===== */
-
-.header {
-  background-color: #225e5c;
-  padding: 18px 0;
-  position: fixed;
-  top: 40px; /* debajo de la top-bar */
-  width: 100%;
-  z-index: 1000;
-}
-
-.navbar {
-  max-width: 1200px;
-  margin: auto;
-}
-
-.menu {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  padding: 0;
-  margin: 0;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  position: relative;
-  padding-bottom: 5px;
-  transition: color 0.3s ease;
-}
-
-/* Línea inferior animada */
-.menu li a::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: #00d084;
-  left: 0;
-  bottom: 0;
-  transition: width 0.3s ease;
-}
-
-.menu li a:hover::after {
-  width: 100%;
-}
-
-.menu li a:hover {
-  color: #00d084;
-}
-
+    padding: 10px; 
+  }
 
    /* Seccion Sobre nosotros */
 
