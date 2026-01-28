@@ -37,17 +37,18 @@ nav {
   z-index: 1001;
 }
 
-.social-links img {
-  width: 20px;
-  margin-left: 20px;
-  opacity: 12;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+.social-links a img {
+  width: 26px;          /* MÁS GRANDES */
+  height: 26px;
+  margin-left: 14px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
 }
 
-.social-links img:hover {
+.social-links a img:hover {
   transform: scale(1.15);
-  opacity: 1;
 }
+
 
 /* Navegación */
 nav {
