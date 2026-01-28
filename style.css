@@ -38,9 +38,9 @@ nav {
 }
 
 .social-links img {
-  width: 18px;
-  margin-left: 14px;
-  opacity: 0.9;
+  width: 20px;
+  margin-left: 20px;
+  opacity: 12;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
