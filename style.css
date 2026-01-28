@@ -132,11 +132,10 @@ nav ul li a:hover::after {
 
 .slider-bg img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
-  filter: blur(20px) brightness(1.4); /* desenfoque y aclarado */
-  transform: scale(2); /* ligeramente más grande */
-  transition: tansform 0.5s ease;
+  height: 100%;
+  object-fit: cover;        /* llena todo el fondo */
+  filter: blur(25px) brightness(1.2);
+  transform: scale(1.1);   /* leve aumento, NO exagerado */
 }
 
 /* Cada slide */
