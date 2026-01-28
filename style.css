@@ -19,7 +19,7 @@ html {
 /* ================== BARRA SUPERIOR + NAV ================== */
 .top-bar,
 nav {
-  background: rgba(34, 94, 92, 0.88);
+  background: rgba(11, 216, 200, 0.85);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
