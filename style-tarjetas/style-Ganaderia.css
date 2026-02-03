@@ -101,6 +101,10 @@ body{
   transform: scale(1.05);
 }
 
+.tarjetas-container {
+  gap: 35px;
+}
+
 
 /*.boton:hover {
   background-color: #c34116;
