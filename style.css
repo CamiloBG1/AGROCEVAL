@@ -4,13 +4,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-/* ================== BASE ================== */
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: #f5f6f4;
   color: #2c3e50;
+  line-height: 1.6;
 }
+
+
+/* ================== BASE ================== */
+
 
 html {
   scroll-behavior: smooth;
@@ -22,6 +25,7 @@ nav {
   background: rgba(107, 242, 206, 0.718);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 
 /* Barra redes */
@@ -35,6 +39,7 @@ nav {
   top: 0;
   width: 100%;
   z-index: 1001;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
 .social-links a img {
