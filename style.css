@@ -169,7 +169,7 @@ nav ul li a:hover::after {
 
 /* ================== SECCIONES ================== */
 section {
-  padding: 80px 20px;
+  padding: 90px 20px;
   text-align: center;
 }
 
@@ -232,25 +232,23 @@ section {
   background-color: #f1fef4;
 }
 
-.tarjeta-verde {
-  background-color: #eafaf1;
-  border: 1px solid #2ecc71;
-}
-
 .boton-verde {
   margin-top: 15px;
-  background-color: #2ecc71;
+  background: linear-gradient(135deg, #34d399, #2ecc71);
   color: #fff;
   border: none;
-  padding: 10px 22px;
-  border-radius: 8px;
+  padding: 10px 26px;
+  border-radius: 25px;
   cursor: pointer;
   font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .boton-verde:hover {
-  background-color: #27ae60;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
+
 
 /* ================== CONTACTO ================== */
 .contacto-section {
@@ -313,5 +311,9 @@ footer a:hover {
 
   .carrusel {
     margin-top: 96px;
+  }
+
+  .tarjeta {
+    width: 90%;
   }
 }
