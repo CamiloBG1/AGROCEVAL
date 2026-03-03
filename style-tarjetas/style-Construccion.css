@@ -1,0 +1,117 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+	background-color: rgba(245, 246, 243, 0.958)
+}
+
+
+/* Primera barra: redes sociales */
+.top-bar {
+    background-color: #79dcd0;
+    padding: 5px 0;
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+  }
+  
+  .social-links a img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    vertical-align: middle;
+  }
+  
+
+
+  .barra-redes a:hover img {
+  transform: scale(1.2);
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+
+/* Tarjetas */
+
+.tarjetas-container {
+  padding: 80px 40px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.tarjeta {
+  width: 280px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+.tarjeta img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.tarjeta h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #00425a;
+  padding: 18px 16px 8px;
+}
+
+
+.boton {
+  display: inline-block;
+  margin: 16px 0 20px;
+  padding: 10px 26px;
+  background-color: #2ecc71;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton:hover {
+  background-color: #27ae60;
+  transform: scale(1.05);
+}
+
+.tarjetas-container {
+  gap: 35px;
+}
+
+/*Separado del titulo y barra de navegacion*/
+
+h1 {
+  margin-top: 80px;         /* Separación de la barra fija */
+  font-size: 40px;          /* Tamaño de letra (ajustable) */
+  text-align: center;       /* Centrado horizontal */
+  color: #00425a;           /* Color de tu paleta */
+  font-weight: bold;        /* Negrita opcional */
+  font-family: 'Arial', sans-serif;  /* O alguna otra fuente legible */
+}
