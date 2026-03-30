@@ -2,9 +2,9 @@
     <html lang="es">
     	<head>
             <meta charset="UTF-8">
-            <title>Construcción</title>
+            <title>Construccion</title>
             <link rel="stylesheet" href="../style-tarjetas/style-Construccion.css">
-        </head>
+      </head>
 
         <body>      
           <!-- Primera barra: redes sociales -->
@@ -23,20 +23,7 @@
                     </div>
               </div>
               
-          <h1>Todo para la construcción  </h1>
-
-          <div class="tarjetas-container">
-            <div class="tarjeta">
-              <img src="../img/plumagrua.jpg" alt="plumagrua">
-              <h3>Pluma Grua</h3>
-              <button class="btn-leer-mas" onclick="mostrarInfo(this)">Leer más</button>
-              <div class="info-extra" style="display: none;">
-                <p></p>
-                    <p>Estimular la síntesis de moléculas orgánicas</p>
-                    <p></p>
-              </div>
-            </div>
-
+          <h1>Todo para la construcción</h1>      
 
             <div class="tarjeta">
               <img src="../img/mezcladora.jpg" alt="mezcladora">
@@ -55,17 +42,16 @@
 
          <script>
           function mostrarInfo(boton) {
-            const info = boton.nextElementSibling;
-            if (info.style.display === "none" || info.style.display === "") {
-              info.style.display = "block";
-              boton.textContent = "Leer menos";
-              } else {
-                info.style.display = "none";
-                boton.textContent = "Leer más";
-                }
-              }
+          const info = boton.nextElementSibling;
+          if (info.style.display === "none" || info.style.display === "") {
+          info.style.display = "block";
+          boton.textContent = "Leer menos";
+          } else {
+          info.style.display = "none";
+          boton.textContent = "Leer más";
+          }
+        }
         </script>
-        
+
         </body>   
     </html>
-
