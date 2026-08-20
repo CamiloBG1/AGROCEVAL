@@ -1,68 +1,323 @@
 <!DOCTYPE html>
-    <html lang="es">
-    	<head>
-            <meta charset="UTF-8">
-            <title>Construccion</title>
-            <link rel="stylesheet" href="../style-tarjetas/style-Construccion.css">
-      </head>
+<html lang="es">
 
-        <body>      
-          <!-- Primera barra: redes sociales -->
-           <div class="top-bar">
-                    <div class="social-links">
-                    <a href="https://www.facebook.com/equiagrosilomaiz" target="_blank">
-                        <img src="../img/facebook.png" alt="Facebook" />
-                    </a>
-                    <a href="https://www.instagram.com/agroceval/" target="_blank">
-                        <img src="../img/instagram.png" alt="Instagram" />
-                    </a>
-                    <a href="https://wa.me/573104616270?text=Hola%20AGROCEVAL,%20quiero%20más%20información" target="_blank">
-                      <img src="../img/whatsapp.png" alt="WhatsApp" />
-                    </a>
-                    
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Equipos y soluciones para construcción. Mezcladoras de concreto, plumas grúa y maquinaria para proyectos de construcción.">
+
+    <title>Construcción | Agroceval</title>
+
+    <link rel="stylesheet"
+          href="../style-tarjetas/style-Construccion.css">
+
+    <link rel="icon"
+          href="../img/LOGOTIPO.PNG"
+          type="image/png">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         BARRA SUPERIOR
+         ===================================================== -->
+
+    <header class="top-bar">
+
+        <div class="social-links">
+
+            <a href="https://www.facebook.com/equiagrosilomaiz"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Facebook">
+
+                <img src="../img/facebook.png"
+                     alt="Facebook">
+
+            </a>
+
+
+            <a href="https://www.instagram.com/agroceval/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Instagram">
+
+                <img src="../img/instagram.png"
+                     alt="Instagram">
+
+            </a>
+
+
+            <a href="https://wa.me/573104616270?text=Hola%20AGROCEVAL,%20quiero%20más%20información"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="WhatsApp">
+
+                <img src="../img/whatsapp.png"
+                     alt="WhatsApp">
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         CONTENIDO PRINCIPAL
+         ===================================================== -->
+
+    <main>
+
+
+        <!-- =========================
+             ENCABEZADO
+             ========================= -->
+
+        <section class="encabezado-seccion">
+
+            <span class="etiqueta-seccion">
+                SOLUCIONES PARA CONSTRUCCIÓN
+            </span>
+
+
+            <h1>
+                Todo para la construcción
+            </h1>
+
+
+            <p>
+                Equipos y maquinaria diseñados para apoyar
+                tus proyectos de construcción con eficiencia,
+                rendimiento y confiabilidad.
+            </p>
+
+
+            <div class="linea-decorativa"></div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PRODUCTOS
+             ========================= -->
+
+        <section class="productos-section">
+
+            <div class="tarjetas-container">
+
+
+                <!-- =================================================
+                     PRODUCTO 1
+                     ================================================= -->
+
+                <article class="tarjeta">
+
+                    <div class="imagen-producto">
+
+                        <img src="../img/mezcladora.jpg"
+                             alt="Mezcladora de concreto"
+                             loading="lazy">
+
                     </div>
-              </div>
-              
-          <h1>Todo para la construcción</h1>
-
-            <div class="tarjeta">
-              <img src="../img/mezcladora.jpg" alt="mezcladora">
-
-            <h2>Mezcladora</h2>
-            <button class="btn-leer-mas" onclick="mostrarInfo(this)">Leer más</button>
-            <div class="info-extra" style="display: none;">
-                <p>En Agroceval ofrecemos mezcladoras de concreto diseñadas para brindar alto rendimiento y durabilidad en diferentes tipos de proyectos,</p>
-                <p> desde pequeñas remodelaciones hasta obras de construcción más exigentes.</p>
-         </div>    
-         
-            <div class="tarjeta">
-              <img src="../img/plumagrua.jpg" alt="mezcladora">
-
-            <h2>plumagrua</h2>
-            <button class="btn-leer-mas" onclick="mostrarInfo(this)">Leer más</button>
-            <div class="info-extra" style="display: none;">
-                <p>Pluma Grua PG500 Importada de 500 Kg, Incluye Motor 2HP,1F,220v.</p>
-         </div>  
 
 
-         <!-- SCRIPT para las tarjetas -->
+                    <div class="contenido-tarjeta">
 
-         <script>
-          function mostrarInfo(boton) {
-          const info = boton.nextElementSibling;
-          if (info.style.display === "none" || info.style.display === "") {
-          info.style.display = "block";
-          boton.textContent = "Leer menos";
-          } else {
-          info.style.display = "none";
-          boton.textContent = "Leer más";
-          }
+
+                        <span class="categoria">
+                            CONSTRUCCIÓN
+                        </span>
+
+
+                        <h2>
+                            Mezcladora de concreto
+                        </h2>
+
+
+                        <button
+                            class="btn-leer-mas"
+                            type="button"
+                            onclick="mostrarInfo(this)"
+                            aria-expanded="false">
+
+                            Leer más
+
+                        </button>
+
+
+                        <div class="info-extra">
+
+                            <p>
+                                En Agroceval ofrecemos mezcladoras
+                                de concreto diseñadas para brindar
+                                alto rendimiento y durabilidad en
+                                diferentes tipos de proyectos.
+                            </p>
+
+
+                            <p>
+                                Son ideales tanto para pequeñas
+                                remodelaciones como para obras
+                                de construcción más exigentes.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     PRODUCTO 2
+                     ================================================= -->
+
+                <article class="tarjeta">
+
+                    <div class="imagen-producto">
+
+                        <img src="../img/plumagrua.jpg"
+                             alt="Pluma grúa PG500"
+                             loading="lazy">
+
+                    </div>
+
+
+                    <div class="contenido-tarjeta">
+
+
+                        <span class="categoria">
+                            CONSTRUCCIÓN
+                        </span>
+
+
+                        <h2>
+                            Pluma Grúa PG500
+                        </h2>
+
+
+                        <button
+                            class="btn-leer-mas"
+                            type="button"
+                            onclick="mostrarInfo(this)"
+                            aria-expanded="false">
+
+                            Leer más
+
+                        </button>
+
+
+                        <div class="info-extra">
+
+                            <p>
+                                Pluma Grúa PG500 importada,
+                                diseñada para facilitar el
+                                movimiento y elevación de materiales
+                                en diferentes proyectos de construcción.
+                            </p>
+
+
+                            <h3>
+                                Características
+                            </h3>
+
+
+                            <ul>
+
+                                <li>
+                                    Capacidad de carga: 500 kg.
+                                </li>
+
+                                <li>
+                                    Motor de 2 HP.
+                                </li>
+
+                                <li>
+                                    Alimentación 1F, 220V.
+                                </li>
+
+                                <li>
+                                    Ideal para trabajos de construcción.
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script>
+
+        function mostrarInfo(boton) {
+
+            const tarjeta =
+                boton.closest(".tarjeta");
+
+            const info =
+                tarjeta.querySelector(".info-extra");
+
+
+            const estaAbierto =
+                info.classList.contains("activo");
+
+
+            if (estaAbierto) {
+
+                info.classList.remove("activo");
+
+                boton.textContent =
+                    "Leer más";
+
+                boton.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+            } else {
+
+                info.classList.add("activo");
+
+                boton.textContent =
+                    "Leer menos";
+
+                boton.setAttribute(
+                    "aria-expanded",
+                    "true"
+                );
+
+            }
+
         }
-        </script>
 
-        </body>   
-    </html>
+    </script>
 
 
+</body>
 
-        
+</html>

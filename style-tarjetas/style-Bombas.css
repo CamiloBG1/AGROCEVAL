@@ -1,117 +1,791 @@
-*{
-    padding:0;
-    margin:0;
+/* =========================================================
+   AGROCEVAL
+   BOMBAS - RIEGO - PISCICULTURA
+   ========================================================= */
+
+
+/* =========================
+   VARIABLES
+   ========================= */
+
+:root {
+
+    --verde-principal: #16a36a;
+    --verde-secundario: #22c55e;
+    --verde-claro: #dff8ed;
+
+    --azul-oscuro: #164e63;
+    --azul: #0f766e;
+
+    --texto: #263238;
+    --texto-suave: #64748b;
+
+    --fondo: #f4f8f6;
+    --blanco: #ffffff;
+
+    --borde: #e5e7eb;
+
+    --sombra:
+        0 10px 30px rgba(15, 23, 42, 0.08);
+
+    --sombra-hover:
+        0 20px 45px rgba(15, 23, 42, 0.15);
+
 }
 
-body{
-	background-color: rgba(245, 246, 243, 0.958)
+
+/* =========================
+   RESET
+   ========================= */
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
 }
 
 
-/* Primera barra: redes sociales */
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    font-family:
+        "Segoe UI",
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f7faf8 0%,
+            #eef7f3 100%
+        );
+
+    color: var(--texto);
+
+    line-height: 1.6;
+
+    min-height: 100vh;
+
+}
+
+
+/* =========================
+   BARRA SUPERIOR
+   ========================= */
+
 .top-bar {
-    background-color: #79dcd0;
-    padding: 5px 0;
-    text-align: right;
+
     position: fixed;
-    width: 100%;
+
     top: 0;
     left: 0;
-    z-index: 1001;
-  }
-  
-  .social-links a img {
-    width: 24px;
-    height: 24px;
-    margin: 0 10px;
-    vertical-align: middle;
-  }
-  
 
+    width: 100%;
 
-  .barra-redes a:hover img {
-  transform: scale(1.2);
+    height: 58px;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    padding: 0 35px;
+
+    background:
+        rgba(255, 255, 255, 0.88);
+
+    backdrop-filter: blur(12px);
+
+    -webkit-backdrop-filter: blur(12px);
+
+    border-bottom:
+        1px solid rgba(22, 163, 106, 0.15);
+
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, 0.05);
+
+    z-index: 1000;
+
 }
 
-.social-icons img {
-  width: 32px;
-  height: 32px;
-  margin: 0 10px;
-  vertical-align: middle;
+
+/* =========================
+   REDES SOCIALES
+   ========================= */
+
+.social-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
 }
 
 
-/* Tarjetas */
+.social-links a {
+
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f1f5f3;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.social-links a:hover {
+
+    transform: translateY(-3px);
+
+    background: var(--verde-claro);
+
+    box-shadow:
+        0 6px 15px rgba(22, 163, 106, 0.18);
+
+}
+
+
+.social-links img {
+
+    width: 21px;
+    height: 21px;
+
+    object-fit: contain;
+
+    transition:
+        transform 0.3s ease;
+
+}
+
+
+.social-links a:hover img {
+
+    transform: scale(1.1);
+
+}
+
+
+/* =========================
+   ENCABEZADO
+   ========================= */
+
+.encabezado-seccion {
+
+    text-align: center;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding:
+        135px 20px
+        55px;
+
+}
+
+
+/* Pequeña etiqueta */
+
+.etiqueta-seccion {
+
+    display: inline-block;
+
+    padding:
+        7px 16px;
+
+    margin-bottom: 16px;
+
+    border-radius: 50px;
+
+    background:
+        var(--verde-claro);
+
+    color:
+        var(--verde-principal);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+/* Título */
+
+.encabezado-seccion h1 {
+
+    font-size:
+        clamp(32px, 5vw, 52px);
+
+    line-height: 1.15;
+
+    font-weight: 800;
+
+    color:
+        var(--azul-oscuro);
+
+    margin-bottom: 18px;
+
+    letter-spacing: -1px;
+
+}
+
+
+/* Descripción */
+
+.encabezado-seccion > p {
+
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color:
+        var(--texto-suave);
+
+    font-size: 17px;
+
+}
+
+
+/* Línea decorativa */
+
+.linea-decorativa {
+
+    width: 70px;
+
+    height: 4px;
+
+    margin:
+        25px auto 0;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--verde-principal),
+            var(--verde-secundario)
+        );
+
+}
+
+
+/* =========================
+   SECCIÓN PRODUCTOS
+   ========================= */
+
+.productos-section {
+
+    width: 100%;
+
+    padding:
+        10px 20px
+        90px;
+
+}
+
+
+/* =========================
+   CONTENEDOR DE TARJETAS
+   ========================= */
 
 .tarjetas-container {
-  padding: 80px 40px;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  padding: 20px;
+
+    width: 100%;
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 30px;
+
 }
+
+
+/* =========================
+   TARJETA
+   ========================= */
 
 .tarjeta {
-  width: 280px;
-  background-color: #ffffff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background:
+        var(--blanco);
+
+    border:
+        1px solid var(--borde);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        var(--sombra);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+
 }
+
 
 .tarjeta:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+        var(--sombra-hover);
+
+    border-color:
+        rgba(22, 163, 106, 0.25);
+
 }
 
 
-.tarjeta img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  display: block;
+/* =========================
+   IMAGEN
+   ========================= */
+
+.imagen-producto {
+
+    width: 100%;
+
+    height: 245px;
+
+    overflow: hidden;
+
+    background:
+        #eef3f0;
+
 }
 
-.tarjeta h3 {
-  font-size: 18px;
-  font-weight: 700;
-  color: #00425a;
-  padding: 18px 16px 8px;
+
+.imagen-producto img {
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease;
+
 }
 
 
-.boton {
-  display: inline-block;
-  margin: 16px 0 20px;
-  padding: 10px 26px;
-  background-color: #2ecc71;
-  color: white;
-  text-decoration: none;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: 600;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+.tarjeta:hover
+.imagen-producto img {
+
+    transform:
+        scale(1.06);
+
 }
 
-.boton:hover {
-  background-color: #27ae60;
-  transform: scale(1.05);
+
+/* =========================
+   CONTENIDO
+   ========================= */
+
+.contenido-tarjeta {
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+
+    padding:
+        24px;
+
 }
 
-.tarjetas-container {
-  gap: 35px;
+
+/* =========================
+   CATEGORÍA
+   ========================= */
+
+.categoria {
+
+    align-self: flex-start;
+
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color:
+        var(--verde-principal);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+
 }
 
-/*Separado del titulo y barra de navegacion*/
 
-h1 {
-  margin-top: 80px;         /* Separación de la barra fija */
-  font-size: 40px;          /* Tamaño de letra (ajustable) */
-  text-align: center;       /* Centrado horizontal */
-  color: #00425a;           /* Color de tu paleta */
-  font-weight: bold;        /* Negrita opcional */
-  font-family: 'Arial', sans-serif;  /* O alguna otra fuente legible */
+/* =========================
+   TÍTULO DE PRODUCTO
+   ========================= */
+
+.tarjeta h2 {
+
+    color:
+        var(--azul-oscuro);
+
+    font-size: 19px;
+
+    line-height: 1.35;
+
+    font-weight: 750;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* =========================
+   BOTÓN
+   ========================= */
+
+.btn-leer-mas {
+
+    align-self: flex-start;
+
+    border: none;
+
+    padding:
+        10px 20px;
+
+    border-radius: 50px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--verde-principal),
+            var(--verde-secundario)
+        );
+
+    color:
+        white;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 15px
+        rgba(22, 163, 106, 0.18);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+
+}
+
+
+.btn-leer-mas:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(22, 163, 106, 0.28);
+
+}
+
+
+.btn-leer-mas:active {
+
+    transform:
+        translateY(0);
+
+}
+
+
+/* =========================
+   INFORMACIÓN EXTRA
+   ========================= */
+
+.info-extra {
+
+    display: none;
+
+    margin-top: 20px;
+
+    padding-top: 18px;
+
+    border-top:
+        1px solid var(--borde);
+
+    color:
+        var(--texto-suave);
+
+    font-size: 14px;
+
+    animation:
+        aparecer 0.3s ease;
+
+}
+
+
+.info-extra.activo {
+
+    display: block;
+
+}
+
+
+/* Animación */
+
+@keyframes aparecer {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(-8px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* =========================
+   TEXTO EXTRA
+   ========================= */
+
+.info-extra p {
+
+    margin-bottom: 12px;
+
+}
+
+
+.info-extra h3 {
+
+    color:
+        var(--azul-oscuro);
+
+    font-size: 14px;
+
+    margin:
+        16px 0 8px;
+
+}
+
+
+/* =========================
+   LISTAS
+   ========================= */
+
+.info-extra ul {
+
+    padding-left: 20px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.info-extra li {
+
+    margin-bottom: 5px;
+
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 1000px) {
+
+    .tarjetas-container {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+}
+
+
+/* =========================
+   MÓVILES
+   ========================= */
+
+@media (max-width: 650px) {
+
+    .top-bar {
+
+        height: 52px;
+
+        padding:
+            0 16px;
+
+    }
+
+
+    .social-links {
+
+        gap: 7px;
+
+    }
+
+
+    .social-links a {
+
+        width: 33px;
+        height: 33px;
+
+    }
+
+
+    .social-links img {
+
+        width: 19px;
+        height: 19px;
+
+    }
+
+
+    .encabezado-seccion {
+
+        padding:
+            110px 18px
+            40px;
+
+    }
+
+
+    .encabezado-seccion h1 {
+
+        font-size: 34px;
+
+    }
+
+
+    .encabezado-seccion > p {
+
+        font-size: 15px;
+
+    }
+
+
+    .productos-section {
+
+        padding:
+            10px 15px
+            60px;
+
+    }
+
+
+    .tarjetas-container {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 22px;
+
+    }
+
+
+    .imagen-producto {
+
+        height: 230px;
+
+    }
+
+
+    .contenido-tarjeta {
+
+        padding: 20px;
+
+    }
+
+
+    .tarjeta h2 {
+
+        font-size: 18px;
+
+    }
+
+}
+
+
+/* =========================
+   PANTALLAS MUY PEQUEÑAS
+   ========================= */
+
+@media (max-width: 380px) {
+
+    .encabezado-seccion h1 {
+
+        font-size: 29px;
+
+    }
+
+
+    .imagen-producto {
+
+        height: 210px;
+
+    }
+
 }
