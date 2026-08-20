@@ -1,82 +1,694 @@
-<DOCTYPE html>
-    <html lang="es">
-    	<head>
-            <meta charset="UTF-8">
-            <title>Ganadería</title>
-            <link rel="stylesheet" href="../style-tarjetas/style-Ganaderia.css">
-            <link rel="icon" href="img/LOGOTIPO.PNG" type="image/png">  
-        </head>
+<!DOCTYPE html>
+<html lang="es">
 
-        <body>      
-          <!-- Primera barra: redes sociales -->
-           <div class="top-bar">
-                    <div class="social-links">
-                    <a href="https://www.facebook.com/equiagrosilomaiz" target="_blank">
-                        <img src="../img/facebook.png" alt="Facebook" />
-                    </a>
-                    <a href="https://www.instagram.com/agroceval/" target="_blank">
-                        <img src="../img/instagram.png" alt="Instagram" />
-                    </a>
-                    <a href="https://wa.me/573104616270?text=Hola%20AGROCEVAL,%20quiero%20más%20información" target="_blank">
-                      <img src="../img/whatsapp.png" alt="WhatsApp" />
-                    </a>
-                    
-                    </div>
-              </div>
-              
-          <h1>Ganadería</h1>
+<head>
 
-          <div class="tarjetas-container">
-            <div class="tarjeta">
-              <img src="../img/Equipo de ordeño.jpg" alt="Equipo de ordeño">
-              <h3>Equpos de ordeño portatiles y tipo angarilla</h3>
-              <button class="btn-leer-mas" onclick="mostrarInfo(this)">Leer más</button>
-              <div class="info-extra" style="display: none;">
-                <p>Ofrecemos equipos de ordeño de 1 y 2 puestos, tanto portátiles como tipo angarilla, con motor eléctrico, a gasolina y/o ambos, ideales para pequeñas y medianas ganaderías.</p>
-                <p> Estos equipos están diseñados para mejorar la eficiencia del ordeño y optimizar el trabajo en tu ganadería, ¡todo con una pequeña inversión!</p>
-                <p>- Equipos de ordeño de 1 o 2 puestos</p>
-                <p>- Motor eléctrico, a gasolina o ambos</p>
-                <p>- Perfectos para mejorar proyectos en pequeñas y medianas ganaderías</p>
-                <p>- Fácil uso y alta eficiencia para optimizar la producción de leche</p>
-                <p> ¡OFERTA ESPECIAL!
-                    Puesto en ciudad capital a un precio increíble.</p>
-              </div>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="AGROCEVAL - Productos y soluciones para ganadería."
+    >
+
+    <meta
+        name="author"
+        content="AGROCEVAL"
+    >
+
+    <title>Ganadería | AGROCEVAL</title>
+
+    <link
+        rel="icon"
+        href="../img/LOGOTIPO.PNG"
+        type="image/png"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../style-tarjetas/style-Ganaderia.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         BARRA SUPERIOR
+    ====================================================== -->
+
+    <div class="top-bar">
+
+        <div class="top-bar-content">
+
+            <span class="top-message">
+                Soluciones para el campo y la agroindustria
+            </span>
+
+
+            <div class="social-links">
+
+                <a
+                    href="https://www.facebook.com/equiagrosilomaiz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook AGROCEVAL"
+                >
+
+                    <img
+                        src="../img/facebook.png"
+                        alt="Facebook"
+                    >
+
+                </a>
+
+
+                <a
+                    href="https://www.instagram.com/agroceval/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram AGROCEVAL"
+                >
+
+                    <img
+                        src="../img/instagram.png"
+                        alt="Instagram"
+                    >
+
+                </a>
+
+
+                <a
+                    href="https://wa.me/573104616270?text=Hola%20AGROCEVAL,%20quiero%20más%20información"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="WhatsApp AGROCEVAL"
+                >
+
+                    <img
+                        src="../img/whatsapp.png"
+                        alt="WhatsApp"
+                    >
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a
+                href="../index.html"
+                class="logo"
+                aria-label="Volver a AGROCEVAL"
+            >
+
+                <img
+                    src="../img/LOGOTIPO.PNG"
+                    alt="AGROCEVAL"
+                >
+
+            </a>
+
+
+            <div class="breadcrumb">
+
+                <a href="../index.html">
+                    Inicio
+                </a>
+
+                <span>›</span>
+
+                <span>
+                    Ganadería
+                </span>
+
             </div>
 
 
-            <div class="tarjeta">
-              <img src="../img/Ensilaje de maiz.jpg" alt="Ensilaje de maiz">
-              <h3>Ensilaje de maíz</h3>
-              <button class="btn-leer-mas" onclick="mostrarInfo(this)">Leer más</button>
-              <div class="info-extra" style="display: none;">
-                <p>Ofrecemos ensilaje de maíz de alta calidad, con un alto nivel energético y nutricional, perfecto para la alimentación de su ganado. Ideal para mejorar la productividad y salud de sus animales.  Envíos a cualquier lugar del país.</p>
+            <a
+                href="https://wa.me/573104616270?text=Hola%20AGROCEVAL,%20quiero%20información%20sobre productos de ganadería"
+                class="nav-button"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Cotizar
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO DE CATEGORÍA
+    ====================================================== -->
+
+    <main>
+
+        <section class="category-hero">
+
+            <div class="category-hero-overlay"></div>
+
+            <div class="category-hero-content">
+
+                <span class="category-tag">
+                    AGROCEVAL · PORTAFOLIO
+                </span>
+
+                <h1>
+                    Soluciones para
+                    <span>Ganadería</span>
+                </h1>
+
+                <p>
+                    Equipos y productos diseñados para apoyar
+                    las actividades de producción ganadera.
+                </p>
+
+                <a
+                    href="#productos"
+                    class="hero-button"
+                >
+                    Ver productos
+                    <span>↓</span>
+                </a>
+
             </div>
-         </div>
 
-            <div class="tarjeta">
-              <img src="../img/ganaderia1.jpg" alt="Brete">
-              <h3>Brete o manga de sujeción para ganado</h3>
-              <button class="btn-leer-mas" onclick="mostrarInfo(this)">Leer más</button>
-              <div class="info-extra" style="display: none;">
-                <p>....</p>
+        </section>
+
+
+
+        <!-- =====================================================
+             PRODUCTOS
+        ====================================================== -->
+
+        <section
+            id="productos"
+            class="products-section"
+        >
+
+            <div class="section-container">
+
+
+                <div class="section-heading">
+
+                    <span class="section-tag">
+                        CATEGORÍA
+                    </span>
+
+                    <h2>
+                        Productos para
+                        <span>Ganadería</span>
+                    </h2>
+
+                    <p>
+                        Conoce las soluciones disponibles en nuestro
+                        portafolio para el sector ganadero.
+                    </p>
+
+                </div>
+
+
+
+                <div class="products-grid">
+
+
+                    <!-- =====================================
+                         PRODUCTO 1
+                    ====================================== -->
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            <img
+                                src="../img/Equipo de ordeño.jpg"
+                                alt="Equipo de ordeño"
+                                loading="lazy"
+                            >
+
+                            <span class="product-number">
+                                01
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-content">
+
+                            <span class="product-category">
+                                EQUIPOS DE GANADERÍA
+                            </span>
+
+                            <h3>
+                                Equipos de ordeño portátiles
+                                y tipo angarilla
+                            </h3>
+
+
+                            <button
+                                class="btn-leer-mas"
+                                onclick="mostrarInfo(this)"
+                                aria-expanded="false"
+                            >
+                                <span>Leer más</span>
+                                <strong>+</strong>
+                            </button>
+
+
+                            <div class="info-extra">
+
+                                <p>
+                                    Ofrecemos equipos de ordeño de 1 y
+                                    2 puestos, tanto portátiles como tipo
+                                    angarilla, con motor eléctrico,
+                                    a gasolina y/o ambos, ideales para
+                                    pequeñas y medianas ganaderías.
+                                </p>
+
+                                <p>
+                                    Estos equipos están diseñados para
+                                    mejorar la eficiencia del ordeño y
+                                    optimizar el trabajo en tu ganadería,
+                                    ¡todo con una pequeña inversión!
+                                </p>
+
+                                <ul>
+
+                                    <li>
+                                        Equipos de ordeño de 1 o 2 puestos
+                                    </li>
+
+                                    <li>
+                                        Motor eléctrico, a gasolina o ambos
+                                    </li>
+
+                                    <li>
+                                        Perfectos para pequeñas y medianas
+                                        ganaderías
+                                    </li>
+
+                                    <li>
+                                        Fácil uso y alta eficiencia para
+                                        optimizar la producción de leche
+                                    </li>
+
+                                </ul>
+
+
+                                <div class="offer-note">
+
+                                    <strong>
+                                        ¡OFERTA ESPECIAL!
+                                    </strong>
+
+                                    <span>
+                                        Puesto en ciudad capital a un
+                                        precio increíble.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =====================================
+                         PRODUCTO 2
+                    ====================================== -->
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            <img
+                                src="../img/Ensilaje de maiz.jpg"
+                                alt="Ensilaje de maíz"
+                                loading="lazy"
+                            >
+
+                            <span class="product-number">
+                                02
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-content">
+
+                            <span class="product-category">
+                                ALIMENTACIÓN ANIMAL
+                            </span>
+
+                            <h3>
+                                Ensilaje de maíz
+                            </h3>
+
+
+                            <button
+                                class="btn-leer-mas"
+                                onclick="mostrarInfo(this)"
+                                aria-expanded="false"
+                            >
+                                <span>Leer más</span>
+                                <strong>+</strong>
+                            </button>
+
+
+                            <div class="info-extra">
+
+                                <p>
+                                    Ofrecemos ensilaje de maíz de alta
+                                    calidad, con un alto nivel energético
+                                    y nutricional, perfecto para la
+                                    alimentación de su ganado.
+                                </p>
+
+                                <p>
+                                    Ideal para mejorar la productividad
+                                    y salud de sus animales.
+                                </p>
+
+                                <p class="shipping-note">
+                                    Envíos a cualquier lugar del país.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =====================================
+                         PRODUCTO 3
+                    ====================================== -->
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            <img
+                                src="../img/ganaderia1.jpg"
+                                alt="Brete o manga de sujeción para ganado"
+                                loading="lazy"
+                            >
+
+                            <span class="product-number">
+                                03
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-content">
+
+                            <span class="product-category">
+                                MANEJO GANADERO
+                            </span>
+
+                            <h3>
+                                Brete o manga de sujeción
+                                para ganado
+                            </h3>
+
+
+                            <button
+                                class="btn-leer-mas"
+                                onclick="mostrarInfo(this)"
+                                aria-expanded="false"
+                            >
+                                <span>Leer más</span>
+                                <strong>+</strong>
+                            </button>
+
+
+                            <div class="info-extra">
+
+                                <p>
+                                    .....
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
             </div>
-         </div>
+
+        </section>
 
 
-         <!-- SCRIPT para las tarjetas -->
 
-         <script>
-          function mostrarInfo(boton) {
-          const info = boton.nextElementSibling;
-          if (info.style.display === "none" || info.style.display === "") {
-          info.style.display = "block";
-          boton.textContent = "Leer menos";
-          } else {
-          info.style.display = "none";
-          boton.textContent = "Leer más";
-          }
+        <!-- =====================================================
+             CTA
+        ====================================================== -->
+
+        <section class="cta-section">
+
+            <div class="cta-container">
+
+                <div class="cta-content">
+
+                    <span class="section-tag">
+                        ¿NECESITAS INFORMACIÓN?
+                    </span>
+
+                    <h2>
+                        ¿Buscas un producto
+                        para tu ganadería?
+                    </h2>
+
+                    <p>
+                        Comunícate con AGROCEVAL y solicita información
+                        sobre nuestros productos y disponibilidad.
+                    </p>
+
+                </div>
+
+
+                <div class="cta-buttons">
+
+                    <a
+                        href="https://wa.me/573104616270?text=Hola%20AGROCEVAL,%20estoy%20interesado%20en%20productos%20para%20ganadería"
+                        class="btn-primary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Consultar por WhatsApp
+                    </a>
+
+
+                    <a
+                        href="../index.html#Productos"
+                        class="btn-secondary"
+                    >
+                        Ver otras categorías
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         WHATSAPP
+    ====================================================== -->
+
+    <a
+        href="https://wa.me/573104616270?text=Hola%20AGROCEVAL,%20quiero%20información"
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contactar por WhatsApp"
+    >
+
+        <img
+            src="../img/whatsapp.png"
+            alt="WhatsApp"
+        >
+
+    </a>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-brand">
+
+                <img
+                    src="../img/LOGOTIPO.PNG"
+                    alt="AGROCEVAL"
+                >
+
+                <p>
+                    Soluciones para el campo y la agroindustria.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>
+                    Navegación
+                </h3>
+
+                <a href="../index.html">
+                    Inicio
+                </a>
+
+                <a href="../index.html#sobre-nosotros">
+                    Nosotros
+                </a>
+
+                <a href="../index.html#Productos">
+                    Productos
+                </a>
+
+                <a href="../index.html#Ofertas-del-mes">
+                    Ofertas
+                </a>
+
+                <a href="../index.html#Contacto">
+                    Contacto
+                </a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>
+                    Legal
+                </h3>
+
+                <a href="../index-politicas/politica.html">
+                    Política de privacidad
+                </a>
+
+                <a href="../index-politicas/terminos.html">
+                    Términos y condiciones
+                </a>
+
+                <a href="mailto:agrocevalcolombia@hotmail.com">
+                    Correo electrónico
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 AGROCEVAL.
+                Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+        function mostrarInfo(boton) {
+
+            const info = boton.nextElementSibling;
+
+            const estaAbierto =
+                info.classList.contains("show");
+
+
+            if (estaAbierto) {
+
+                info.classList.remove("show");
+
+                boton.classList.remove("active");
+
+                boton.querySelector("span").textContent =
+                    "Leer más";
+
+                boton.querySelector("strong").textContent =
+                    "+";
+
+                boton.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+            } else {
+
+                info.classList.add("show");
+
+                boton.classList.add("active");
+
+                boton.querySelector("span").textContent =
+                    "Leer menos";
+
+                boton.querySelector("strong").textContent =
+                    "−";
+
+                boton.setAttribute(
+                    "aria-expanded",
+                    "true"
+                );
+
+            }
+
         }
-        </script>
 
-        </body>   
-    </html>
+    </script>
+
+
+</body>
+
+</html>
