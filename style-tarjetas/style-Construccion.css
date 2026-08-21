@@ -1,22 +1,27 @@
 /* =========================================================
    VARIABLES
+   IDENTIDAD VISUAL AGROCEVAL
 ========================================================= */
 
 :root {
-    --green-950: #0b2416;
-    --green-900: #123524;
-    --green-800: #174d32;
-    --green-700: #176b3a;
-    --green-600: #1f8a4c;
-    --green-500: #27ae60;
+    --verde-oscuro: #123524;
+    --verde-profundo: #0b2416;
+    --verde-principal: #176b3a;
+    --verde-acento: #27ae60;
+    --verde-hover: #174d32;
+    --verde-claro: #eaf8ef;
+    --verde-suave: #f3faf6;
 
-    --white: #ffffff;
-    --gray-50: #f8faf9;
-    --gray-100: #f1f5f2;
-    --gray-200: #e2e8e4;
-    --gray-500: #64748b;
-    --gray-700: #334155;
-    --gray-900: #17211b;
+    --fondo: #f8faf9;
+    --blanco: #ffffff;
+
+    --texto: #334155;
+    --texto-suave: #64748b;
+
+    --borde: #e2e8e4;
+
+    --sombra:
+        0 8px 25px rgba(18, 53, 36, 0.08);
 }
 
 /* =========================================================
@@ -45,7 +50,6 @@ body {
     background-color: var(--fondo);
     color: var(--texto);
     line-height: 1.6;
-
     overflow-x: hidden;
 }
 
@@ -58,7 +62,6 @@ a {
     text-decoration: none;
 }
 
-
 /* =========================================================
    BARRA SUPERIOR
 ========================================================= */
@@ -67,22 +70,16 @@ a {
     position: fixed;
     top: 0;
     left: 0;
-
     width: 100%;
     height: 40px;
-
     z-index: 2000;
 
-    background: rgba(111, 216, 200, 0.92);
-
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: var(--verde-profundo);
 }
 
 .top-bar-inner {
     width: min(1280px, 100%);
     height: 100%;
-
     margin: auto;
     padding: 0 22px;
 
@@ -92,8 +89,7 @@ a {
 }
 
 .top-message {
-    color: var(--verde-oscuro);
-
+    color: rgba(255, 255, 255, 0.82);
     font-size: 13px;
     font-weight: 600;
 }
@@ -101,7 +97,6 @@ a {
 .social-links {
     display: flex;
     align-items: center;
-
     gap: 12px;
 }
 
@@ -121,18 +116,15 @@ a {
 }
 
 .social-links a:hover {
-    background: rgba(255, 255, 255, 0.25);
-
+    background: rgba(255, 255, 255, 0.12);
     transform: translateY(-2px);
 }
 
 .social-links img {
     width: 21px;
     height: 21px;
-
     object-fit: contain;
 }
-
 
 /* =========================================================
    NAVBAR
@@ -140,15 +132,12 @@ a {
 
 .site-header {
     position: fixed;
-
     top: 40px;
     left: 0;
-
     width: 100%;
-
     z-index: 1999;
 
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.96);
 
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -158,11 +147,9 @@ a {
 
 .navbar {
     width: min(1280px, 100%);
-
     min-height: 76px;
 
     margin: auto;
-
     padding: 10px 22px;
 
     display: flex;
@@ -175,17 +162,14 @@ a {
 .logo {
     display: flex;
     align-items: center;
-
     flex-shrink: 0;
 }
 
 .logo img {
     width: 62px;
     height: 62px;
-
     object-fit: contain;
 }
-
 
 /* =========================================================
    BREADCRUMB
@@ -196,17 +180,14 @@ a {
 
     display: flex;
     align-items: center;
-
     gap: 10px;
 
     color: var(--texto-suave);
-
     font-size: 14px;
 }
 
 .breadcrumb a {
     color: var(--verde-principal);
-
     font-weight: 700;
 
     transition: color 0.2s ease;
@@ -224,30 +205,26 @@ a {
     color: var(--texto);
 }
 
-
 /* =========================================================
    BOTÓN NAVBAR
 ========================================================= */
 
 .nav-button {
     display: inline-flex;
-
     align-items: center;
     justify-content: center;
 
-    padding: 11px 18px;
+    padding: 11px 20px;
 
-    border-radius: 8px;
+    border-radius: 50px;
 
     background: var(--verde-acento);
-
     color: white;
 
     font-size: 14px;
     font-weight: 700;
 
     white-space: nowrap;
-
     flex-shrink: 0;
 
     transition:
@@ -257,10 +234,8 @@ a {
 
 .nav-button:hover {
     background: var(--verde-hover);
-
     transform: translateY(-2px);
 }
-
 
 /* =========================================================
    HERO
@@ -270,7 +245,6 @@ a {
     position: relative;
 
     min-height: 440px;
-
     margin-top: 116px;
 
     display: flex;
@@ -281,8 +255,8 @@ a {
     background:
         linear-gradient(
             120deg,
-            #1d4f4c,
-            #2f7772
+            #0f3b24,
+            #176b3a
         );
 }
 
@@ -298,7 +272,7 @@ a {
     background-size: cover;
     background-position: center;
 
-    opacity: 0.18;
+    opacity: 0.20;
 
     transform: scale(1.05);
 }
@@ -310,21 +284,19 @@ a {
     background:
         linear-gradient(
             90deg,
-            rgba(20, 52, 49, 0.82),
-            rgba(20, 52, 49, 0.35),
-            rgba(20, 52, 49, 0.12)
+            rgba(11, 36, 22, 0.94),
+            rgba(18, 53, 36, 0.68),
+            rgba(18, 53, 36, 0.20)
         );
 }
 
 .hero-content {
     position: relative;
-
     z-index: 2;
 
     width: min(1180px, 100%);
 
     margin: auto;
-
     padding: 70px 25px;
 
     color: white;
@@ -334,16 +306,16 @@ a {
     display: inline-block;
 
     margin-bottom: 15px;
-
-    padding: 7px 12px;
+    padding: 7px 14px;
 
     border-radius: 30px;
 
-    background: rgba(46, 204, 113, 0.92);
+    background: var(--verde-acento);
+
+    color: white;
 
     font-size: 12px;
     font-weight: 800;
-
     letter-spacing: 1.5px;
 }
 
@@ -363,7 +335,7 @@ a {
 }
 
 .hero-content h1 span {
-    color: #8ff0ba;
+    color: #6fe096;
 }
 
 .hero-content p {
@@ -371,24 +343,21 @@ a {
 
     margin-bottom: 28px;
 
-    color: rgba(255, 255, 255, 0.92);
+    color: rgba(255, 255, 255, 0.90);
 
     font-size: 18px;
 }
 
 .hero-button {
     display: inline-flex;
-
     align-items: center;
-
     gap: 10px;
 
-    padding: 12px 20px;
+    padding: 12px 21px;
 
-    border-radius: 8px;
+    border-radius: 50px;
 
     background: white;
-
     color: var(--verde-oscuro);
 
     font-weight: 700;
@@ -399,11 +368,9 @@ a {
 }
 
 .hero-button:hover {
-    background: #effff8;
-
+    background: #effff5;
     transform: translateY(-2px);
 }
-
 
 /* =========================================================
    PRODUCTOS
@@ -453,10 +420,8 @@ a {
 
 .section-heading > p {
     color: var(--texto-suave);
-
     font-size: 16px;
 }
-
 
 /* =========================================================
    GRID DE PRODUCTOS
@@ -474,7 +439,6 @@ a {
 
     gap: 28px;
 }
-
 
 /* =========================================================
    TARJETAS
@@ -500,9 +464,8 @@ a {
     transform: translateY(-6px);
 
     box-shadow:
-        0 18px 38px rgba(28, 51, 46, 0.13);
+        0 18px 38px rgba(18, 53, 36, 0.14);
 }
-
 
 /* =========================================================
    IMAGEN
@@ -563,7 +526,6 @@ a {
     font-weight: 800;
 }
 
-
 /* =========================================================
    CONTENIDO
 ========================================================= */
@@ -604,7 +566,6 @@ a {
 
     font-size: 14px;
 }
-
 
 /* =========================================================
    BOTÓN LEER MÁS
@@ -661,7 +622,7 @@ a {
 
     border-radius: 50%;
 
-    background: rgba(46, 204, 113, 0.12);
+    background: rgba(39, 174, 96, 0.12);
 
     font-size: 18px;
 
@@ -672,7 +633,6 @@ a {
 .btn-leer-mas.active strong {
     background: rgba(255, 255, 255, 0.15);
 }
-
 
 /* =========================================================
    INFORMACIÓN EXTRA
@@ -692,12 +652,6 @@ a {
         opacity 0.3s ease,
         margin-top 0.3s ease;
 }
-
-
-/*
-   IMPORTANTE:
-   El JavaScript utiliza la clase .show
-*/
 
 .info-extra.show {
     max-height: 600px;
@@ -735,7 +689,6 @@ a {
     font-size: 14px;
 }
 
-
 /* =========================================================
    CTA
 ========================================================= */
@@ -751,7 +704,7 @@ a {
 
     margin: auto;
 
-    padding: 35px;
+    padding: 40px;
 
     display: flex;
 
@@ -765,12 +718,12 @@ a {
     background:
         linear-gradient(
             135deg,
-            #225e5c,
-            #2f7772
+            var(--verde-oscuro),
+            var(--verde-principal)
         );
 
     box-shadow:
-        0 15px 35px rgba(34, 94, 92, 0.18);
+        0 15px 35px rgba(18, 53, 36, 0.18);
 }
 
 .cta-content {
@@ -778,7 +731,7 @@ a {
 }
 
 .cta-container .section-tag {
-    color: #8ff0ba;
+    color: #72df98;
 }
 
 .cta-container h2 {
@@ -805,16 +758,15 @@ a {
     flex-wrap: wrap;
 }
 
-
 /* =========================================================
    BOTONES CTA
 ========================================================= */
 
 .btn-primary,
 .btn-secondary {
-    padding: 12px 18px;
+    padding: 12px 20px;
 
-    border-radius: 8px;
+    border-radius: 50px;
 
     font-size: 14px;
     font-weight: 700;
@@ -853,7 +805,6 @@ a {
     background:
         rgba(255, 255, 255, 0.18);
 }
-
 
 /* =========================================================
    WHATSAPP
@@ -895,13 +846,12 @@ a {
     transform: scale(1.08);
 }
 
-
 /* =========================================================
    FOOTER
 ========================================================= */
 
 .footer {
-    background: #193f3d;
+    background: var(--verde-profundo);
 
     color: white;
 }
@@ -911,7 +861,7 @@ a {
 
     margin: auto;
 
-    padding: 45px 20px;
+    padding: 50px 20px;
 
     display: grid;
 
@@ -962,11 +912,14 @@ a {
     font-size: 14px;
 
     transition:
-        color 0.2s ease;
+        color 0.2s ease,
+        transform 0.2s ease;
 }
 
 .footer-links a:hover {
-    color: #9af0c0;
+    color: #72df98;
+
+    transform: translateX(3px);
 }
 
 .footer-bottom {
@@ -983,7 +936,6 @@ a {
     font-size: 13px;
 }
 
-
 /* =========================================================
    TABLET
 ========================================================= */
@@ -991,14 +943,15 @@ a {
 @media (max-width: 900px) {
 
     .products-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns:
+            1fr 1fr;
     }
 
     .footer-container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns:
+            1fr 1fr;
     }
 }
-
 
 /* =========================================================
    MÓVIL
@@ -1044,7 +997,7 @@ a {
     }
 
     .nav-button {
-        padding: 9px 12px;
+        padding: 9px 14px;
 
         font-size: 12px;
     }
@@ -1125,7 +1078,6 @@ a {
 
     .whatsapp-float {
         right: 15px;
-
         bottom: 15px;
 
         width: 52px;
@@ -1137,7 +1089,6 @@ a {
         height: 29px;
     }
 }
-
 
 /* =========================================================
    ACCESIBILIDAD
