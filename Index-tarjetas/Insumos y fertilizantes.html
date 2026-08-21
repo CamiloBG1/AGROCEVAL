@@ -1,78 +1,595 @@
 <!DOCTYPE html>
-    <html lang="es">
-    	<head>
-            <meta charset="UTF-8">
-            <title>Insumos y Fertilizantes</title>
-            <link rel="stylesheet" href="../style-tarjetas/style-Insumos.css">
-        </head>
+<html lang="es">
 
-        <body>      
-          <!-- Primera barra: redes sociales -->
-           <div class="top-bar">
-                    <div class="social-links">
-                    <a href="https://www.facebook.com/equiagrosilomaiz" target="_blank">
-                        <img src="../img/facebook.png" alt="Facebook" />
-                    </a>
-                    <a href="https://www.instagram.com/agroceval/" target="_blank">
-                        <img src="../img/instagram.png" alt="Instagram" />
-                    </a>
-                    <a href="https://wa.me/573104616270?text=Hola%20AGROCEVAL,%20quiero%20más%20información" target="_blank">
-                      <img src="../img/whatsapp.png" alt="WhatsApp" />
-                    </a>
-                    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Insumos y fertilizantes AGROCEVAL para apoyar el crecimiento, nutrición y productividad de tus cultivos.">
+
+    <meta name="keywords"
+        content="AGROCEVAL, fertilizantes, insumos agrícolas, Cuvalle, Fosmac, agricultura">
+
+    <meta name="author" content="AGROCEVAL">
+
+    <title>Insumos y Fertilizantes | AGROCEVAL</title>
+
+    <link rel="icon" href="../img/LOGOTIPO.PNG" type="image/png">
+    <link rel="stylesheet" href="../style-tarjetas/style-Insumos.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         BARRA SUPERIOR
+    ====================================================== -->
+
+    <div class="top-bar">
+
+        <div class="top-bar-inner">
+
+            <span class="top-message">
+                Soluciones para el sector agropecuario
+            </span>
+
+            <div class="social-links">
+
+                <a href="https://www.facebook.com/equiagrosilomaiz"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Facebook AGROCEVAL">
+
+                    <img src="../img/facebook.png" alt="Facebook">
+
+                </a>
+
+                <a href="https://www.instagram.com/agroceval/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Instagram AGROCEVAL">
+
+                    <img src="../img/instagram.png" alt="Instagram">
+
+                </a>
+
+                <a href="https://wa.me/573104616270?text=Hola%20AGROCEVAL,%20quiero%20más%20información"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="WhatsApp AGROCEVAL">
+
+                    <img src="../img/whatsapp.png" alt="WhatsApp">
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <nav class="navbar">
+
+            <a href="../Index.html"
+               class="logo"
+               aria-label="AGROCEVAL">
+
+                <img src="../img/LOGOTIPO.PNG" alt="AGROCEVAL">
+
+            </a>
+
+
+            <div class="breadcrumb">
+
+                <a href="../Index.html">
+                    Inicio
+                </a>
+
+                <span>/</span>
+
+                <strong>
+                    Insumos y Fertilizantes
+                </strong>
+
+            </div>
+
+
+            <a href="https://wa.me/573104616270?text=Hola%20AGROCEVAL,%20quiero%20cotizar%20un%20producto"
+               class="nav-button"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                Solicitar cotización
+
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+
+        <section class="category-hero">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    NUTRICIÓN Y PROTECCIÓN AGRÍCOLA
+                </span>
+
+                <h1>
+                    Insumos y
+                    <span>Fertilizantes</span>
+                </h1>
+
+                <p>
+                    Productos diseñados para apoyar la nutrición,
+                    el crecimiento y la productividad de tus cultivos.
+                </p>
+
+                <a href="#productos" class="hero-button">
+                    Ver productos
+                    <span>↓</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PRODUCTOS
+        ====================================================== -->
+
+        <section class="products-section" id="productos">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    NUESTRO PORTAFOLIO
+                </span>
+
+                <h2>
+                    Soluciones para tu
+                    <span>cultivo</span>
+                </h2>
+
+                <p>
+                    Conoce nuestros productos y encuentra alternativas
+                    para mejorar la nutrición y desarrollo de tus cultivos.
+                </p>
+
+            </div>
+
+
+            <div class="products-grid">
+
+
+                <!-- =================================================
+                     PRODUCTO 1
+                ================================================== -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="../img/Cuvalle.jpg"
+                             alt="Fertilizante Cuvalle"
+                             loading="lazy">
+
+                        <span class="product-number">
+                            01
+                        </span>
+
                     </div>
-              </div>
-              
-          <h1>Insumos y Fertilizantes</h1>
 
-          <div class="tarjetas-container">
-            <div class="tarjeta">
-              <img src="../img/Cuvalle.jpg" alt="Cuvalle">
-              <h3>Cuvalle</h3>
-              <button class="btn-leer-mas" onclick="mostrarInfo(this)">Leer más</button>
-              <div class="info-extra" style="display: none;">
-                <p> ¡Nutrición completa y natural para tus cultivos!
-                    Ofrecemos Fertilizante ecológico enriquecido con cobre, magnesio, zinc y microelementos, diseñado para:</p>
-                    <p>Estimular la síntesis de moléculas orgánicas</p>
-                    <p>Impulsar el crecimiento y desarrollo de la planta</p>
-                    <p>Mejorar el transporte de agua y nutrientes a través del xilema y floema</p>
-                    <p>Fortalecer la resistencia frente a infecciones causadas por microorganismos</p>
-                    <p>Ideal para cultivos saludables, resistentes y productivos.</p>
-              </div>
+
+                    <div class="product-content">
+
+                        <span class="product-category">
+                            FERTILIZANTES
+                        </span>
+
+                        <h3>
+                            Cuvalle
+                        </h3>
+
+                        <p class="product-summary">
+                            Fertilizante ecológico enriquecido con
+                            cobre, magnesio, zinc y microelementos.
+                        </p>
+
+
+                        <button
+                            class="btn-leer-mas"
+                            type="button"
+                            onclick="mostrarInfo(this)"
+                            aria-expanded="false">
+
+                            <span>
+                                Leer más
+                            </span>
+
+                            <strong>
+                                +
+                            </strong>
+
+                        </button>
+
+
+                        <div class="info-extra">
+
+                            <p>
+                                ¡Nutrición completa y natural para tus cultivos!
+                            </p>
+
+                            <p>
+                                Fertilizante ecológico diseñado para apoyar
+                                diferentes procesos fisiológicos de la planta.
+                            </p>
+
+                            <p>
+                                <strong>
+                                    Beneficios:
+                                </strong>
+                            </p>
+
+                            <ul>
+
+                                <li>
+                                    Estimula la síntesis de moléculas orgánicas.
+                                </li>
+
+                                <li>
+                                    Impulsa el crecimiento y desarrollo de la planta.
+                                </li>
+
+                                <li>
+                                    Mejora el transporte de agua y nutrientes.
+                                </li>
+
+                                <li>
+                                    Fortalece la resistencia frente a microorganismos.
+                                </li>
+
+                            </ul>
+
+                            <p>
+                                Ideal para cultivos saludables,
+                                resistentes y productivos.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     PRODUCTO 2
+                ================================================== -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="../img/Fosmac.jpg"
+                             alt="Fertilizante Fosmac"
+                             loading="lazy">
+
+                        <span class="product-number">
+                            02
+                        </span>
+
+                    </div>
+
+
+                    <div class="product-content">
+
+                        <span class="product-category">
+                            FERTILIZANTES
+                        </span>
+
+                        <h3>
+                            Fosmac
+                        </h3>
+
+                        <p class="product-summary">
+                            Enraizante de rápida asimilación con
+                            nanopartículas de fósforo.
+                        </p>
+
+
+                        <button
+                            class="btn-leer-mas"
+                            type="button"
+                            onclick="mostrarInfo(this)"
+                            aria-expanded="false">
+
+                            <span>
+                                Leer más
+                            </span>
+
+                            <strong>
+                                +
+                            </strong>
+
+                        </button>
+
+
+                        <div class="info-extra">
+
+                            <p>
+                                ¡Impulsa tus cultivos desde la raíz!
+                            </p>
+
+                            <p>
+                                Enraizante potente e instantáneo diseñado
+                                para favorecer la disponibilidad de nutrientes.
+                            </p>
+
+                            <p>
+                                <strong>
+                                    Beneficios:
+                                </strong>
+                            </p>
+
+                            <ul>
+
+                                <li>
+                                    Favorece el aprovechamiento de nutrientes del suelo.
+                                </li>
+
+                                <li>
+                                    Contribuye al aumento de la productividad.
+                                </li>
+
+                                <li>
+                                    Ayuda a reducir costos de fertilización.
+                                </li>
+
+                                <li>
+                                    Menor impacto ambiental.
+                                </li>
+
+                                <li>
+                                    Rápida asimilación.
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CTA
+        ====================================================== -->
+
+        <section class="cta-section">
+
+            <div class="cta-container">
+
+                <div>
+
+                    <span class="section-tag">
+                        ¿NECESITAS ASESORÍA?
+                    </span>
+
+                    <h2>
+                        Encuentra los insumos
+                        adecuados para tu cultivo
+                    </h2>
+
+                    <p>
+                        Comunícate con AGROCEVAL para recibir
+                        información y cotizar nuestros productos.
+                    </p>
+
+                </div>
+
+
+                <div class="cta-buttons">
+
+                    <a href="https://wa.me/573104616270?text=Hola%20AGROCEVAL,%20quiero%20información%20sobre%20Insumos%20y%20Fertilizantes"
+                       class="btn-primary"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        Hablar por WhatsApp
+
+                    </a>
+
+
+                    <a href="../Index.html"
+                       class="btn-secondary">
+
+                        Volver al inicio
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         WHATSAPP FLOTANTE
+    ====================================================== -->
+
+    <a href="https://wa.me/573104616270?text=Hola%20AGROCEVAL,%20quiero%20más%20información"
+       class="whatsapp-float"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Contactar por WhatsApp">
+
+        <img src="../img/whatsapp.png" alt="WhatsApp">
+
+    </a>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-brand">
+
+                <img src="../img/LOGOTIPO.PNG"
+                     alt="AGROCEVAL">
+
+                <p>
+                    Soluciones y equipos para
+                    el sector agropecuario.
+                </p>
+
             </div>
 
 
-            <div class="tarjeta">
-              <img src="../img/Fosmac.jpg" alt="Fosmac">
-              <h3>Fosmac</h3>
-              <button class="btn-leer-mas" onclick="mostrarInfo(this)">Leer más</button>
-              <div class="info-extra" style="display: none;">
-                <p>¡Impulsa tus cultivos desde la raíz!</p>
-                <p>Descubre nuestro Enraizante potente e instantáneo, con nanopartículas de fósforo que:</p>
-                <p>-Rescatan nutrientes del suelo</p>
-                <p>-Aumentan la productividad</p>
-                <p>-Reducen costos</p>
-                <p>-Protegen el medio ambiente</p>
-                <p>-Ofrecen una rápida asimilación, superando a los fertilizantes tradicionales</p>
+            <div class="footer-links">
+
+                <h3>
+                    Categoría
+                </h3>
+
+                <a href="#productos">
+                    Cuvalle
+                </a>
+
+                <a href="#productos">
+                    Fosmac
+                </a>
+
             </div>
-         </div>
 
 
-         <!-- SCRIPT para las tarjetas -->
+            <div class="footer-links">
 
-         <script>
-          function mostrarInfo(boton) {
-          const info = boton.nextElementSibling;
-          if (info.style.display === "none" || info.style.display === "") {
-          info.style.display = "block";
-          boton.textContent = "Leer menos";
-          } else {
-          info.style.display = "none";
-          boton.textContent = "Leer más";
-          }
+                <h3>
+                    Contacto
+                </h3>
+
+                <a href="https://wa.me/573104616270"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    310 461 6270
+
+                </a>
+
+                <a href="https://www.instagram.com/agroceval/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    Instagram
+
+                </a>
+
+                <a href="https://www.facebook.com/equiagrosilomaiz"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    Facebook
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 AGROCEVAL.
+            Todos los derechos reservados.
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+        function mostrarInfo(boton) {
+
+            const tarjeta =
+                boton.closest(".product-card");
+
+            const info =
+                tarjeta.querySelector(".info-extra");
+
+            const abierto =
+                info.classList.contains("show");
+
+
+            info.classList.toggle(
+                "show",
+                !abierto
+            );
+
+
+            boton.classList.toggle(
+                "active",
+                !abierto
+            );
+
+
+            boton.setAttribute(
+                "aria-expanded",
+                String(!abierto)
+            );
+
+
+            boton.querySelector("span").textContent =
+                abierto
+                    ? "Leer más"
+                    : "Leer menos";
+
+
+            boton.querySelector("strong").textContent =
+                abierto
+                    ? "+"
+                    : "−";
+
         }
-        </script>
-        
-        </body>   
-    </html>
 
+    </script>
+
+</body>
+
+</html>
