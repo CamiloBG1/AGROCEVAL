@@ -429,7 +429,6 @@ a {
 
 .products-grid {
     max-width: 1180px;
-
     margin: auto;
 
     display: grid;
@@ -438,6 +437,8 @@ a {
         repeat(2, minmax(0, 1fr));
 
     gap: 28px;
+
+    align-items: stretch;
 }
 
 /* =========================================================
